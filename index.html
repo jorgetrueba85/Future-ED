@@ -18,6 +18,7 @@ h1 {
         if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
     alert("NO 👍"); 
+    e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
