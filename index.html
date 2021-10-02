@@ -16,13 +16,14 @@ h1 {
 <body>
 <script type="text/javascript">
         if (document.addEventListener) {
-  document.addEventListener('contextmenu', function(e) {
+  document.addEventListener('contextmenu', function(e)
+  {
     alert("NO 👍"); 
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("You've tried to open context menu");
+    alert("NO 👍");
     window.event.returnValue = false;
   });
 }
