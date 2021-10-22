@@ -8,3 +8,8 @@ h1 {
   color: black;
   background: orange;
 }
+.names{
+  color: orange;
+  font-family: Montserrat;
+  text-align: center;
+}
