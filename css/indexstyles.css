@@ -13,3 +13,37 @@ h2 {
   font-family: Montserrat;
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 10;
+  backdrop-filter: blur(10px);
+  width: 100%;  
+  border-radius: 15px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-family: Montserrat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #011a32;
+}
+
+.active {
+  background-color: #ffac45;
+}
+
