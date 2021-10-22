@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Changing CSS</title>
+        <link rel="stylesheet" type="text/css" href="stylesdark.css"/>
+    </head>
+    <body>
+      <script>
+        function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+      </script>
+        <a href="#" onclick="changeCSS('stylesdark.css', 0);">STYLE 1</a> 
+        <a href="#" onclick="changeCSS('k.css', 0);">STYLE 2</a>
+    </body>
+</html>
