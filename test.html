@@ -16,6 +16,10 @@
 
     document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
 }
+          
+          window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+  console.log(`changed to ${e.matches ? "dark" : "light"} mode`)
+});
       </script>
         <a href="#" onclick="changeCSS('css/stylesdark.css', 0);">STYLE 1</a> 
         <a href="#" onclick="changeCSS('css/k.css', 0);">STYLE 2</a>
