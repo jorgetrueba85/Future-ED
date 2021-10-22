@@ -1,12 +1,10 @@
         if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e)
   {
-    alert("NO 👍"); 
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("NO 👍");
     window.event.returnValue = false;
   });
 }
