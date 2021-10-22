@@ -3,6 +3,7 @@ h1 {
   color: orange;
   font-family: Montserrat;
   text-align: center;
+  padding-top: 10px;
   }
 ::selection {
   color: black;
