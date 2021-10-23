@@ -21,10 +21,6 @@ var origTitle = document.title;
    document.title = 'Regresaaa :(';
  }
 
- // bind functions to blur and focus events
- window.onblur = newTitle;
- window.onfocus = oldTitle;
-
 function changeCSS(cssFile, cssLinkIndex) {
 
     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
@@ -46,3 +42,7 @@ function changeCSS(cssFile, cssLinkIndex) {
 } else {
   changeCSS('css/stylesdark.css', 0);
 }
+
+ // bind functions to blur and focus events
+ window.onblur = newTitle;
+ window.onfocus = oldTitle;
