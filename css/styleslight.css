@@ -22,8 +22,8 @@ ul {
   overflow: hidden;
   position: fixed;
   top: 10;
+ backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   width: 98%;  
   border-radius: 15px;
 }
