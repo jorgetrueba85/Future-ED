@@ -8,6 +8,7 @@ h1 {
 
 .sistema{
   margin: auto;
+  display: none;
   /*style="padding-bottom: 30px;padding-left: 40px;padding-top: 20px;" */
 }
 
