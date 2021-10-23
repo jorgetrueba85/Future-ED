@@ -5,6 +5,18 @@ h1 {
   text-align: center;
   padding-top: 10px;
   }
+
+.sistema{
+  margin: auto;
+  
+}
+
+.planeta{
+  color: white;
+  font-size: 20px;
+  text-align: center; 
+}
+
 ::selection {
   color: black;
   background: orange;
@@ -49,13 +61,3 @@ li a:hover:not(.active) {
   background-color: #ffac45;
 }
 
-.sistema{
-  margin: auto;
-  
-}
-
-.planeta{
-  color: white;
-  font-size: 20px;
-  text-align: center; 
-}
