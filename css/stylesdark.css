@@ -49,3 +49,13 @@ li a:hover:not(.active) {
   background-color: #ffac45;
 }
 
+.sistema{
+  margin: auto;
+  
+}
+
+.planeta{
+  color: orange;
+  font-size: 20px;
+  text-align: center; 
+}
