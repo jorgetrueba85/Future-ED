@@ -23,7 +23,7 @@ ul {
   position: fixed;
   top: 10;
   backdrop-filter: blur(10px);
-  width: 100%;  
+  width: 90%;  
   border-radius: 15px;
 }
 
