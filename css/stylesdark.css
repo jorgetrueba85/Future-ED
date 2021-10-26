@@ -6,16 +6,13 @@ h1 {
   padding-top: 10px;
   }
 
-.sistema{
-  margin: auto;
-  display: none;
+.nombre{
+  padding-left: 50px;
 
 }
 
 .planeta{
-  color: white;
-  font-size: 20px;
-  text-align: center; 
+  display: flex;align-items: center;flex-direction: row;
 }
 
 ::selection {
