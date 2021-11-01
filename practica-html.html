@@ -6,57 +6,45 @@
 <link rel="shortcut icon" type="image/png" href="css/logo-svg.png">
 <link rel="stylesheet" href="css/styles.css">
  <style>
-header, footer {
-  background-color: orange;
-  width: 90%;
-  height: 60px;
- margin: auto;
-}
-  
-main {
-  background-color: green;
-  width: 83%;
-  height: 300px;
- margin: auto;
- padding: 20px;
-}
-  
- main section {
-  height: 50px;
-  background-color: yellow;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  }
-  
-  footer {
-  width: 90%;
-  height: 60px;
-  background-color: orange;
-  margin: auto;
-  }
+   h1 {
+     color: black;
+     padding-left: 2vw;
+     z-index: 1;
+     float: left;
+   }
+   
+   body {background-color: #ffffff;}
+
+   .icon{
+     float: right;
+     padding-right: 2vw;
+     z-index: 2;
+   }
+    .mac {
+    width: 200px;
+     }
+
+    .texto{
+      display: inline;
+    }
   </style>
 </head>
 <body>
-  <ul ondragstart="return false;">
-    <li><a class="active" href="index.html">Inicio</a></li>
-    <li><a href="sistema-solar.html">Sistema Solar</a></li>
-    <li><a href="practica-html.html">Practica HTML</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
-  <br>
-  <br>
-  <h1>Practica HTML</h1>
-<header>
-  <main>
-    <section>
-    </section>
-    <section>
-    </section>
-    <section>
-    </section>
-    <section>
-    </section>
-  </main>
+<div>
+  <header>
+    <h1>Practica HTML</h1>
+    <picture>
+    <source srcset="https://www.apple.com/v/mac/compare/r/images/overview/icon_m1__q3k2d76hkf6i_large.png" media="(min-width: 360px)">
+    <img class="icon" src="" alt="Apple M1 chip icon">
+  </picture>
   </header>
+</div>
+<div>
+  <section class="texto">
+    <img src="https://www.apple.com/v/mac/compare/r/images/overview/compare_macbook_pro_13_silver__b61a0n20o8nm_large.jpg" alt="eee">
+    <p class="texto">32111</p>  
+    <p class="texto">makbuk prro</p>
+  </section>
+</div>
 </body>
 </html>
