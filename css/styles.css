@@ -25,6 +25,7 @@ h2 {
   text-align: center;
 }
 
+
 ul {
   list-style-type: none;
   position: fixed;
@@ -52,4 +53,4 @@ li a:hover {
   text-decoration: none;
   background-color: rgb(0, 0, 0);
   border-radius: 1.2vw;
-}
+ }
