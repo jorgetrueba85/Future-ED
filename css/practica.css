@@ -21,6 +21,12 @@
     display: flex;
     padding-left: 20px;
 }
+
+.nombre2{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 15px;
+}
 .text1{
     display: flex;
     font-family: Montserrat;
