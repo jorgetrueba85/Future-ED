@@ -12,12 +12,12 @@
     display: flex;
 }
 
-.item2{
+.precio{
     display: flex;
     padding-left: 20px;
 }
 
-.item3{
+.nombre{
     display: flex;
     padding-left: 20px;
 }
@@ -34,6 +34,11 @@ p{
     width: 200px;
 }
 
+.descripcion{
+    display: flex;
+    padding-left: 20px;
+}
+
 .imac24{
     width: 190px;
     padding-left: 20px;
@@ -43,4 +48,15 @@ p{
 .mp{
     width: 200px;
     padding-top: 20px;
+}
+
+::selection{
+    background: black;
+    color: white;
+}
+
+ul{
+    font-family: Montserrat;
+    list-style: none;
+    line-height: 30px;
 }
