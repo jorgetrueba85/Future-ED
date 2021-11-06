@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@900&display=swap');
+
+:root{
+    --h1:black;  
+    --bg:rgb(20, 20, 155);
+    --map:grey;
+    --maphover:navy;
+    --mapstroke:white;
+    --navbar:white;
+    --navprimary:white;
+    --navsecondary:white;
+}
+
+body{
+    background-color: black;
+}
+
+.fa-primary{
+    opacity: 1;
+    fill: var(--navprimary);
+}
+
+.fa-secondary{
+    opacity: 0.4;
+    fill: var(--navsecondary);
+}
+
+
+.estado{
+    fill:var(--map);
+    stroke: width 2px;
+    stroke: var(--mapstroke);
+    transition: all 0.2s ease-in-out;
+}
+
+.estado:hover{
+    fill:var(--maphover);
+    stroke: width 2px;
+    stroke: var(--mapstroke);
+    transition: all 0.2s ease-in-out;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 8rem;
+    }
