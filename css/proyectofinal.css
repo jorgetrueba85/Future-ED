@@ -2,29 +2,45 @@
 
 :root{
     --h1:black;  
-    --bg:rgb(20, 20, 155);
+    --bg:rgb(15, 52, 94);
     --map:grey;
-    --maphover:navy;
+    --maphover:rgb(0, 0, 255);
     --mapstroke:white;
-    --navbar:white;
+    --navbar:rgb(255, 255, 255);
     --navprimary:white;
     --navsecondary:white;
+    --logo:black;
 }
 
 body{
-    background-color: black;
+    background-color: var(--bg);
 }
 
-.fa-primary{
-    opacity: 1;
-    fill: var(--navprimary);
+ul{
+    display: flex;
+    list-style-type:none;
+    position: fixed;
+    height: 100%;
+    width: 5rem;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar);
 }
 
-.fa-secondary{
-    opacity: 0.4;
-    fill: var(--navsecondary);
+li{
+  
 }
 
+li a {
+    display: block;
+    color: black;
+    font-family: Montserrat;
+    text-align: center;
+    text-decoration: none;
+  }
 
 .estado{
     fill:var(--map);
@@ -44,5 +60,4 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 8rem;
     }
