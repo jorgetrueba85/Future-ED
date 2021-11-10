@@ -2,15 +2,12 @@
 
 :root{
     --h1:black;  
-    --bg:rgb(15, 52, 94);
+    --bg:rgb(18, 63, 114);
     --map:grey;
     --maphover:rgb(15, 52, 94);
     --mapstroke:white;
     --navbar:rgb(255, 255, 255);
-    --icons:rgb(0, 0, 0);
-    --logo:rgba(0, 0, 0, 0);
-    --borderlogo:rgba(255, 255, 255, 0);
-    --border:rgb(112, 112, 112);
+    --icons:black;
     --logobutton:100%;
 }
 
@@ -24,11 +21,11 @@ body{
 
 .navbar{
     display: flex;
-    z-index: 10;
     top: 0;
     left: 0;
-    width: 5rem;
+    width: 6rem;
     height: 100vh;
+    border-right: 2px solid var(--icons);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -40,7 +37,7 @@ body{
     margin-top: 10px;
     border: 0px;
     border-color: rgba(0,0,0,0);
-    background-color: var(--logo);
+    background-color: rgba(0,0,0,0);
     width: 48px;
     height: 48px;
     display: flex;
@@ -50,19 +47,19 @@ body{
 }
 
 .logo-button svg {
-    fill:rgb(0, 0, 0);
+    fill:var(--icons);
     width: 70%;
     transition: 0.2s ease-in-out;
 }
 
 .logo-button svg:hover{
-    fill:rgb(0, 0, 0);
-    width: var(--logobutton);
+    fill:var(--icons);
+    width: 100%;
     transition: 0.2s ease-in-out;
 }
 
 .logo-button svg:active{
-    fill:rgb(0, 0, 0);
+    fill:var(--icons);
     width: 60%;
     transition: 0.2s ease-in-out;
 }
@@ -73,7 +70,7 @@ body{
     width: 38px;
     margin-top: 5px;
     border-radius: 1px;
-    background-color: black;
+    background-color: var(--icons);
 }
 
 .button{
@@ -107,70 +104,82 @@ body{
 }
 
 .button-bottom svg{
-    fill:#000000;
-    width: 90%;
-    transition: 0.2s ease-in-out;
-}
-
-.button-bottom:hover svg{
-    fill:rgb(0, 0, 0);
+    fill:var(--icons);
     width: 80%;
     transition: 0.2s ease-in-out;
 }
 
-.button-bottom:active{
-    fill:rgb(0, 0, 0);
+.button-bottom svg:hover{
+    fill:var(--icons);
+    width: 90%;
+    transition: 0.2s ease-in-out;
+}
+
+.button-bottom svg:active {
+    fill:var(--icons);
+    width: 70%;
+    transition: 0.2s ease-in-out;   
+}
+
+.button{
+    margin-top: 10px;
+    border: 0px;
+    border-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.button svg{
+    fill:var(--icons);
+    width: 90%;
+    transition: 0.2s ease-in-out;
+}
+
+.button svg:hover{
+    fill:var(--icons);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.button svg:active {
+    fill:var(--icons);
+    width: 70%;
+    transition: 0.2s ease-in-out;   
+}
+
+.b3 svg{
+    fill:var(--icons);
     width: 70%;
     transition: 0.2s ease-in-out;
 }
 
-.button:hover{
-    border-radius:36%;
+.b3 svg:hover{
+    fill:var(--icons);
+    width: 80%;
+    transition: 0.2s ease-in-out;
 }
 
-.fa-primary{
+.b3 svg:active {
+    fill:var(--icons);
+    width: 60%;
+    transition: 0.2s ease-in-out;   
+}
+
+.icondark{
     fill: var(--icons);
+    opacity: 1;
 }
 
-.fa-secondary{
+.iconlight{
     fill: var(--icons);
-    opacity: 0.6;
+    opacity: 0;
 }
 
-  svg polyline,
-  svg line,
-  svg path {
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: 0.2s;
-  }
-
-/*ul{
-    display: flex;
-    list-style-type:none;
-    position: fixed;
-    height: 100%;
-    width: 5rem;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
-    top: 0;
-    left: 0;
-    background-color: var(--navbar);
-}
-
-li{
-  
-}
-
-li a {
-    display: block;
-    color: black;
-    font-family: Montserrat;
-    text-align: center;
-    text-decoration: none;
-  }
-*/
 .estado{
     fill:var(--map);
     stroke: width 2px;
@@ -187,7 +196,6 @@ li a {
 
 .mapa{
     display: flex;
-    z-index: 1;
     top: 0;
     justify-content: center;
     align-content: center;
