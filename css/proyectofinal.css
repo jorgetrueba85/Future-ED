@@ -4,19 +4,148 @@
     --h1:black;  
     --bg:rgb(15, 52, 94);
     --map:grey;
-    --maphover:rgb(0, 0, 255);
+    --maphover:rgb(15, 52, 94);
     --mapstroke:white;
     --navbar:rgb(255, 255, 255);
-    --navprimary:white;
-    --navsecondary:white;
-    --logo:black;
+    --icons:rgb(0, 0, 0);
+    --logo:rgba(0, 0, 0, 0);
+    --borderlogo:rgba(255, 255, 255, 0);
+    --border:rgb(112, 112, 112);
+    --logobutton:100%;
 }
 
 body{
     background-color: var(--bg);
+    margin: 0px;
+    display: flex;
+    align-items: center;
 }
 
-ul{
+
+.navbar{
+    display: flex;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--navbar);
+}
+
+
+.logo-button{
+    margin-top: 10px;
+    border: 0px;
+    border-color: rgba(0,0,0,0);
+    background-color: var(--logo);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.logo-button svg {
+    fill:rgb(0, 0, 0);
+    width: 70%;
+    transition: 0.2s ease-in-out;
+}
+
+.logo-button svg:hover{
+    fill:rgb(0, 0, 0);
+    width: var(--logobutton);
+    transition: 0.2s ease-in-out;
+}
+
+.logo-button svg:active{
+    fill:rgb(0, 0, 0);
+    width: 60%;
+    transition: 0.2s ease-in-out;
+}
+
+
+.divider{
+    height: 2px;
+    width: 38px;
+    margin-top: 5px;
+    border-radius: 1px;
+    background-color: black;
+}
+
+.button{
+    margin-top: 10px;
+    border-width: 0.5px;
+    border-radius:50%;
+    background-color: var(--logo);
+    border-color: var(--border);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.button-bottom{
+    margin-top: auto;
+    margin-bottom: 10px;
+    border: 0px;
+    border-color: rgba(0,0,0,0);
+    background-color: var(--logo);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.button-bottom svg{
+    fill:#000000;
+    width: 90%;
+    transition: 0.2s ease-in-out;
+}
+
+.button-bottom:hover svg{
+    fill:rgb(0, 0, 0);
+    width: 80%;
+    transition: 0.2s ease-in-out;
+}
+
+.button-bottom:active{
+    fill:rgb(0, 0, 0);
+    width: 70%;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover{
+    border-radius:36%;
+}
+
+.fa-primary{
+    fill: var(--icons);
+}
+
+.fa-secondary{
+    fill: var(--icons);
+    opacity: 0.6;
+}
+
+  svg polyline,
+  svg line,
+  svg path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: 0.2s;
+  }
+
+/*ul{
     display: flex;
     list-style-type:none;
     position: fixed;
@@ -41,7 +170,7 @@ li a {
     text-align: center;
     text-decoration: none;
   }
-
+*/
 .estado{
     fill:var(--map);
     stroke: width 2px;
@@ -58,6 +187,8 @@ li a {
 
 .mapa{
     display: flex;
+    z-index: 1;
+    top: 0;
     justify-content: center;
     align-content: center;
     }
