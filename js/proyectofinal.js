@@ -2,6 +2,10 @@ function logo(){
     location.href='index.html';
 }
 
+function portfolio(){
+    location.href='index2.html';
+}
+
 
 function orientacion(){
 if (window.matchMedia("(orientation: portrait)").matches) {
@@ -22,6 +26,7 @@ if (window.matchMedia("(orientation: portrait)").matches) {
      root.style.setProperty('--icons', 'white');
      root.style.setProperty('--bg','rgb(1, 1, 82)');
      root.style.setProperty('--map','rgb(88,88,88)');
+     root.style.setProperty('--border','rgba(255,255,255,100%)');
      root.style.setProperty('--maphover','rgb(15, 52, 94)');
      localStorage.setItem("Tema",'1');
      localStorage.setItem("Theme",'dark');
@@ -33,6 +38,7 @@ if (window.matchMedia("(orientation: portrait)").matches) {
      root.style.setProperty('--bg','rgb(18, 63, 114)');
      root.style.setProperty('--map','grey');
      root.style.setProperty('--maphover','rgb(15, 52, 94)');
+     root.style.setProperty('--border','rgba(0,0,0,0)');
      localStorage.setItem("Tema",'0');
      localStorage.setItem("Theme",'light');
  }
@@ -63,4 +69,8 @@ function temas(){
         localStorage.setItem("Tema",'0');
         localStorage.setItem("Theme",'light');
     }
+}
+
+function nombres(nombre){
+console.log(nombre);
 }

@@ -9,6 +9,7 @@
     --navbar:rgb(255, 255, 255);
     --icons:black;
     --logobutton:100%;
+    --border:rgba(0,0,0,0);
 }
 
 body{
@@ -156,6 +157,7 @@ body{
     fill:var(--icons);
     width: 70%;
     transition: 0.2s ease-in-out;
+    padding-bottom: 10px;
 }
 
 .b3 svg:hover{
@@ -200,3 +202,11 @@ body{
     justify-content: center;
     align-content: center;
     }
+
+.infosection{
+    background-color: var(--navbar);
+    width: 30px;
+    border: 2px solid var(--border);
+    height: 30px;
+    border-radius: 30%;
+}
