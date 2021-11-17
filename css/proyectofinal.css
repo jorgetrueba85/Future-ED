@@ -10,6 +10,8 @@
     --icons:black;
     --logobutton:100%;
     --border:rgba(0,0,0,0);
+    --selectorsvg:var(--icons);
+    --selectoractive:black;
 }
 
 body{
@@ -153,34 +155,93 @@ body{
     transition: 0.2s ease-in-out;   
 }
 
-.b3 svg{
-    fill:var(--icons);
-    width: 70%;
+/*.b3 svg{
     transition: 0.2s ease-in-out;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+*/
+
+.selectordiv1{
+    width: 47px;
+    height: 142px;
+    padding-top: 5px;
+    padding-bottom: 9px;
 }
 
-.b3 svg:hover{
-    fill:var(--icons);
-    width: 80%;
+.selectordiv2{
+    height: 140px;
+    width: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--icons);
+    padding:1px;
+    border-radius: 10px;
+}
+
+.selectordiv3{
+    display: inline-block;
+}
+
+.selectorbutton{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    overflow: visible!important;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.b3 svg:active {
+.selectorbutton:hover{
+    --selectorsvg:var(--navbar);
+    background-color: var(--selectoractive);
+    transition: 0.2s ease-in-out;
+}
+.selectorbutton svg{
+    fill: var(--selectorsvg);
+}
+
+/*
+.selectorbutton svg:hover{
+    fill:var(--navbar);
+    border: 0px solid var(--icons);
+    background-color: var(--icons); 
+    border-radius: 10px;
+    opacity:0.9;
+    transition: 0.2s ease-in-out;
+}
+
+.selectorbutton svg{
     fill:var(--icons);
-    width: 60%;
-    transition: 0.2s ease-in-out;   
+    border: 0px solid var(--icons);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 48px;
 }
 
-.icondark{
-    fill: var(--icons);
-    opacity: 1;
+.selectorbutton{
+    margin-top: 10px;
+    border: 0px;
+    border-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
 }
+*/
 
-.iconlight{
-    fill: var(--icons);
-    opacity: 0;
-}
 
 .estado{
     fill:var(--map);
