@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 :root{
     --h1:black;  
     --bg:rgb(18, 63, 114);
@@ -33,6 +32,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     background-color: var(--navbar);
+    z-index: 2;
 }
 
 
@@ -199,11 +199,19 @@ body{
     transition: 0.2s ease-in-out;
 }
 
-.selectorbutton:hover{
+.selectorbuttonfocus{
     --selectorsvg:var(--navbar);
     background-color: var(--selectoractive);
     transition: 0.2s ease-in-out;
 }
+
+.selectorbutton:hover{
+    --selectorsvg:var(--navbar);
+    background-color: var(--selectoractive);
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
 .selectorbutton svg{
     fill: var(--selectorsvg);
 }
@@ -266,10 +274,53 @@ body{
 
 .infosection{
     background-color: var(--navbar);
-    width: 100px;
+    width: 90vw;
     border: 2px solid var(--border);
-    height: 50vh;
-    z-index: 200;
-    border-radius: 20px;
-    /*transform: translateX(-160%) translateY(-40%);*/
+    height: 95vh;
+    font-weight: 300;
+    border-radius: 16px;
+    transform: translateX(9.6%) translateY(2%);
+    transition: all ease-out;
+    color: var(--icons);
+}
+
+.vertical{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(45%);
+    text-align: center;
+    color: white;
+    font-family: Raleway;
+    font-size: 40px;
+}
+
+.vertical h1{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    font-family: Outfit, sans-serif;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.horizontal{
+    display: none;
+    align-items: center;
+  }
+
+
+.inline{
+    display: inline-block;
 }
