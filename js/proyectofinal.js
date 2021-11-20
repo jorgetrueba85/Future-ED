@@ -13,7 +13,8 @@ function orientacion(){
  if (window.innerHeight > window.innerWidth) {
     document.getElementById("vertical").style.display = "flex";
     document.getElementById("horizontal").style.display = "none";
-} else {
+} 
+else if (window.innerHeight < window.innerWidth) {
     document.getElementById("vertical").style.display = "none";
     document.getElementById("horizontal").style.display = "flex";
  }
