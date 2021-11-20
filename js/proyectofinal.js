@@ -9,6 +9,16 @@ function portfolio(){
     location.href='index2.html';
 }
 
+function orientacion(){
+ if (window.innerHeight > window.innerWidth) {
+    document.getElementById("vertical").style.display = "flex";
+    document.getElementById("horizontal").style.display = "none";
+} else {
+    document.getElementById("vertical").style.display = "none";
+    document.getElementById("horizontal").style.display = "flex";
+ }
+}
+
 
 
 function temacache(){
@@ -38,16 +48,6 @@ function temacache(){
      root.style.setProperty('--border','rgba(0,0,0,0)');
      localStorage.setItem("Tema",'0');
      localStorage.setItem("Theme",'light');
- }
-
- if (window.matchMedia("(orientation: portrait)").matches) {
-    document.getElementById("vertical").style.display = "flex";
-    document.getElementById("horizontal").style.display = "none";
-}
- 
- if (window.matchMedia("(orientation: landscape)").matches) {
-    document.getElementById("vertical").style.display = "none";
-    document.getElementById("horizontal").style.display = "flex";
  }
 
 }
