@@ -179,30 +179,44 @@ estadou = estado;
            break;
 
         case "Sonora":
+            lat = 29.08;
+            lon = -111.12;
             modo('sun');
            break;
 
         case "Zacatecas":
+            lat = 22.76;
+            lon = -102.62;
             modo('sun');
            break;
 
         case "Nuevo León":
+            lat = 25.64;
+            lon = -100.44;
             modo('sun');
            break;
 
         case "San Luis Potosí":
+            lan = 22.11;
+            lon = -101.09;
             modo('sun');
             break;
  
         case "Tamaulipas":
+            lan = 23.74;
+            lon = -99.17;
             modo('sun');
             break;
  
         case "Aguascalientes":
+            lat = 21.88;
+            lon = -102.36;
             modo('sun');
             break;
  
         case "Colima":
+            lat = 19.24;
+            lon = -103.76;
             modo('sun');
             break;
  
