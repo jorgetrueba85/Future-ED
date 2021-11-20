@@ -89,9 +89,9 @@ function modo(modo){
         document.getElementById("state").innerHTML = estadou;
         document.getElementById("forecast").innerHTML = desc;
         document.getElementById("temp").innerHTML = temp + " Cº";
-        document.getElementById("humidity").innerHTML = "Humedad: " + humidity + "%";
-        document.getElementById("pressure").innerHTML = "Presión Atmosférica: " + pressure + "hPA";
-        document.getElementById("sensation").innerHTML = "Sensación Térmica: " + sensation + " Cº";
+        document.getElementById("humidity").innerHTML = "<b>Humedad:  </b>" + humidity + "%";
+        document.getElementById("pressure").innerHTML = "<b>Presión Atmosférica:  </b>" + pressure + "hPA";
+        document.getElementById("sensation").innerHTML = "<b>Sensación Térmica:  </b>" + sensation + " Cº";
         document.getElementById("sun").classList.add('selectorbuttonfocus');
         document.getElementById("wind").classList.remove('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
@@ -100,11 +100,11 @@ function modo(modo){
     case 'wind':
         document.getElementById("modal").style.display = "block";
         document.getElementById("state").innerHTML = estadou;
-        document.getElementById("forecast").innerHTML = "Velocidad: " + wndspd + ' m/s';
-        document.getElementById("temp").innerHTML = "Aceleración: " + wndgust + "";
-        document.getElementById("sensation").innerHTML = "Hacia: " + wnddeg + 'º';
+        document.getElementById("forecast").innerHTML = "<b>Velocidad:  </b>" + wndspd + ' m/s';
+        document.getElementById("temp").innerHTML = "<b>Aceleración:  </b>" + wndgust + "";
+        document.getElementById("sensation").innerHTML = "<b>Hacia:  </b>" + wnddeg + 'º';
         document.getElementById("humidity").innerHTML = '';
-        document.getElementById("pressure").innerHTML = "Presión Atmosférica: " + pressure + "hPA";
+        document.getElementById("pressure").innerHTML = "<b>Presión Atmosférica:  </b>" + pressure + "hPA";
         document.getElementById("sun").classList.remove('selectorbuttonfocus');
         document.getElementById("wind").classList.add('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
