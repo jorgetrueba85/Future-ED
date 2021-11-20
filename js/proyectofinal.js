@@ -253,6 +253,8 @@ estadou = estado;
            break;
 
         case "Distrito Federal":
+            lat = 19.32;
+            lon = -99.43;
             modo('sun');
            break;
 
@@ -268,11 +270,15 @@ estadou = estado;
             modo('sun');
            break;
 
-        case "México":
+        case "Estado de México":
+            lat = 19.29;
+            lon = -99.70;
             modo('sun');
            break;
 
         case "Morelos":
+            lat = 18.93;
+            lon = -99.31;
             modo('sun');
            break;
 
