@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/proyectofinal.css">
     <link rel="shortcut icon" href="css/logo.svg" type="image/x-icon">
 </head>
-<body id="cuerpo" onload="temacache(), buscar('Yucatán')" oncontextmenu="return false">
+<body id="cuerpo" onload="temacache(), buscar('Test')" oncontextmenu="return false">
   <div id="vertical" class="vertical">
     <div>
     <svg height="30vh" viewBox="0 0 380 385" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@
   </div>
  <div id="horizontal" class="horizontal">
   <nav class="navbar">
-    <button class="logo-button" id="logobutton" onclick="logo()" onload="buscar()"> 
+    <button class="logo-button" id="logobutton" onclick="logo()"> 
       <svg width="30" height="29" viewBox="0 0 30 29" xmlns="http://www.w3.org/2000/svg">
         <g id="layer1">
           <path d="M6.86296 0.372803C3.45412 0.372803 0.702431 3.12449 0.702431 6.53333V22.6231C0.702431 26.032 3.45412 28.7837 6.86296 28.7837H22.9528C26.3616 28.7837 29.1133 26.032 29.1133 22.6231V6.53333C29.1133 3.12449 26.3616 0.372803 22.9528 0.372803H6.86296V0.372803ZM7.40659 2.72827H22.4093C24.813 2.72827 26.7579 4.67325 26.7579 7.0769V22.0796C26.7579 24.4832 24.813 26.392 22.4093 26.392H7.40659C5.00292 26.392 3.09417 24.4832 3.09417 22.0796V7.0769C3.09417 4.67325 5.00292 2.72827 7.40659 2.72827Z"/>
@@ -161,6 +161,7 @@
   </div> 
   <div id="modal" class="modal">
     <div class="infosection" id="info">
+      <p id="state"></p>
       <p id="forecast"></p>
       <p id="temp"></p>
       <p id="sensation"></p>

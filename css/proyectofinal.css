@@ -216,41 +216,6 @@ body{
     fill: var(--selectorsvg);
 }
 
-/*
-.selectorbutton svg:hover{
-    fill:var(--navbar);
-    border: 0px solid var(--icons);
-    background-color: var(--icons); 
-    border-radius: 10px;
-    opacity:0.9;
-    transition: 0.2s ease-in-out;
-}
-
-.selectorbutton svg{
-    fill:var(--icons);
-    border: 0px solid var(--icons);
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
-    padding-left: 2px;
-    padding-right: 2px;
-    height: 48px;
-}
-
-.selectorbutton{
-    margin-top: 10px;
-    border: 0px;
-    border-color: rgba(0,0,0,0);
-    background-color: rgba(0,0,0,0);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s ease-in-out;
-}
-*/
-
-
 .estado{
     fill:var(--map);
     stroke: width 2px;
@@ -277,11 +242,20 @@ body{
     width: 90vw;
     border: 2px solid var(--border);
     height: 95vh;
+    font-size: 25px;
     font-weight: 300;
     border-radius: 16px;
     transform: translateX(9.6%) translateY(2%);
     transition: all ease-out;
     color: var(--icons);
+}
+
+#forecast, #state, #humidity, #pressure, #temp, #sensation{
+    margin-left: 10px;
+}
+
+#state{
+    font-size: 30px;
 }
 
 .vertical{
@@ -323,4 +297,8 @@ body{
 
 .inline{
     display: inline-block;
+}
+
+#forecast{
+    text-transform: capitalize;
 }
