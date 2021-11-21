@@ -3,6 +3,8 @@ function logo(){
         document.getElementById("sun").classList.remove('selectorbuttonfocus');
         document.getElementById("wind").classList.remove('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
+        document.getElementById("ipod").style.display = 'flex';
+        document.getElementById("mexicon").style.display = 'none';
 }
 
 function portfolio(){
@@ -26,6 +28,8 @@ function temacache(){
  var root = document.querySelector(':root');
  var rootStyles = getComputedStyle(root);
  var state=localStorage.getItem("Theme");
+ document.getElementById("ipod").style.display = 'flex';
+ document.getElementById("mexicon").style.display = 'none';
 
  if (state == 'dark'){
     root.style.setProperty('--selectoractive', 'rgb(255,255,255)');
@@ -35,6 +39,8 @@ function temacache(){
      root.style.setProperty('--map','rgb(88,88,88)');
      root.style.setProperty('--border','rgba(255,255,255,100%)');
      root.style.setProperty('--maphover','rgb(15, 52, 94)');
+     document.getElementById("moonic").style.display = 'none';
+     document.getElementById("sunic").style.display = 'flex';
      localStorage.setItem("Tema",'1');
      localStorage.setItem("Theme",'dark');
  }
@@ -47,6 +53,8 @@ function temacache(){
      root.style.setProperty('--map','grey');
      root.style.setProperty('--maphover','rgb(15, 52, 94)');
      root.style.setProperty('--border','rgba(0,0,0,0)');
+     document.getElementById("moonic").style.display = 'flex';
+     document.getElementById("sunic").style.display = 'none';
      localStorage.setItem("Tema",'0');
      localStorage.setItem("Theme",'light');
  }
@@ -66,6 +74,8 @@ function temas(){
         root.style.setProperty('--map','rgb(88,88,88)');
         root.style.setProperty('--border','rgba(255,255,255,100%)');
         root.style.setProperty('--maphover','rgb(15, 52, 94)');
+        document.getElementById("moonic").style.display = 'none';
+        document.getElementById("sunic").style.display = 'flex';
         localStorage.setItem("Tema",'1');
         localStorage.setItem("Theme",'dark');
     }
@@ -78,6 +88,8 @@ function temas(){
         root.style.setProperty('--map','grey');
         root.style.setProperty('--maphover','rgb(15, 52, 94)');
         root.style.setProperty('--border','rgba(0,0,0,0)');
+        document.getElementById("moonic").style.display = 'flex';
+        document.getElementById("sunic").style.display = 'none';
         localStorage.setItem("Tema",'0');
         localStorage.setItem("Theme",'light');
     }
@@ -93,6 +105,8 @@ function modo(modo){
         document.getElementById("humidity").innerHTML = "<b>Humedad:  </b>" + humidity + "%";
         document.getElementById("pressure").innerHTML = "<b>Presión Atmosférica:  </b>" + pressure + "hPA";
         document.getElementById("sensation").innerHTML = "<b>Sensación Térmica:  </b>" + sensation + " Cº";
+        document.getElementById("mexicon").style.display = 'flex';
+        document.getElementById("ipod").style.display = 'none';
         document.getElementById("sun").classList.add('selectorbuttonfocus');
         document.getElementById("wind").classList.remove('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
@@ -106,6 +120,8 @@ function modo(modo){
         document.getElementById("sensation").innerHTML = "<b>Hacia:  </b>" + wnddeg + 'º';
         document.getElementById("humidity").innerHTML = '';
         document.getElementById("pressure").innerHTML = "<b>Presión Atmosférica:  </b>" + pressure + "hPA";
+        document.getElementById("mexicon").style.display = 'flex';
+        document.getElementById("ipod").style.display = 'none';
         document.getElementById("sun").classList.remove('selectorbuttonfocus');
         document.getElementById("wind").classList.add('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
@@ -114,8 +130,10 @@ function modo(modo){
     case 'extra':
         document.getElementById("modal").style.display = "block";
         document.getElementById("forecast").innerHTML;
+        document.getElementById("ipod").style.display = 'none';
         document.getElementById("sun").classList.remove('selectorbuttonfocus');
         document.getElementById("wind").classList.remove('selectorbuttonfocus');
+        document.getElementById("mexicon").style.display = 'flex';
         document.getElementById("extra").classList.add('selectorbuttonfocus');
     break;
 
