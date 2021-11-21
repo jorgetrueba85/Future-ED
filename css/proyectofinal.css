@@ -251,10 +251,14 @@ body{
     color: var(--icons);
 }
 
-#forecast, #state, #humidity, #pressure, #temp, #sensation{
+#forecast, #state, #humidity, #pressure, #temp, #sensation, #mensaje{
     margin-left: 10px;
 }
 
+#mensaje{
+    font-weight: 200;
+    font-size: 15px;
+}
 
 #state{
     font-size: 30px;

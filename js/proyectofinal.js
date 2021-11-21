@@ -107,6 +107,7 @@ function modo(modo){
         document.getElementById("sensation").innerHTML = "<b>Sensación Térmica:  </b>" + sensation + " Cº";
         document.getElementById("mexicon").style.display = 'flex';
         document.getElementById("ipod").style.display = 'none';
+        document.getElementById("mensaje").style.display = 'block';
         document.getElementById("sun").classList.add('selectorbuttonfocus');
         document.getElementById("wind").classList.remove('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
@@ -122,6 +123,7 @@ function modo(modo){
         document.getElementById("pressure").innerHTML = "<b>Presión Atmosférica:  </b>" + pressure + "hPA";
         document.getElementById("mexicon").style.display = 'flex';
         document.getElementById("ipod").style.display = 'none';
+        document.getElementById("mensaje").style.display = 'none';
         document.getElementById("sun").classList.remove('selectorbuttonfocus');
         document.getElementById("wind").classList.add('selectorbuttonfocus');
         document.getElementById("extra").classList.remove('selectorbuttonfocus');
@@ -157,6 +159,7 @@ var sensation;
 var pressure;
 var humidity;
 var estadou;
+var test = false;
 
 function buscar(estado){
 estadou = estado;
@@ -164,168 +167,155 @@ estadou = estado;
        case "Baja California":
            lat = 32.61;
            lon = -115.52;
-           modo('sun');
+           test = false;
            break;
 
         case "Baja California Sur":
             lat = 24.11;
             lon = -110.37;
-            modo('sun');
+            test = false;
            break;
 
         case "Coahuila":
             lat = 25.43;
             lon = -101.05;
-            modo('sun');
+            test = false;
            break;
 
         case "Chihuahua":
             lat = 28.67;
             lon = -106.20;
-            modo('sun');
+            test = false;
            break;
 
         case "Durango":
             lat = 24.02;
             lon = -104.71;
-            modo('sun');
+            test = false;
            break;
 
         case "Sinaloa":
             lat = 24.80;
             lon = -107.49;
-            modo('sun');
+            test = false;
            break;
 
         case "Sonora":
             lat = 29.08;
             lon = -111.12;
-            modo('sun');
+            test = false;
            break;
 
         case "Zacatecas":
             lat = 22.76;
             lon = -102.62;
-            modo('sun');
+            test = false;
            break;
 
         case "Nuevo León":
             lat = 25.64;
             lon = -100.44;
-            modo('sun');
+            test = false;
            break;
 
         case "San Luis Potosí":
             lan = 22.11;
             lon = -101.09;
-            modo('sun');
+            test = false;
             break;
  
         case "Tamaulipas":
             lan = 23.74;
             lon = -99.17;
-            modo('sun');
+            test = false;
             break;
  
         case "Aguascalientes":
             lat = 21.88;
             lon = -102.36;
-            modo('sun');
+            test = false;
             break;
  
         case "Colima":
             lat = 19.24;
             lon = -103.76;
-            modo('sun');
+            test = false;
             break;
  
         case "Jalisco":
-            modo('sun');
+            lat = 0;
+            lon = 0;
             break;
  
         case "Michoacán":
-            modo('sun');
+            lat = 0;
+            lon =0 ;
             break;
  
         case "Nayarit":
-            modo('sun');
             break;
  
         case "Campeche":
-            modo('sun');
             break;
  
         case "Oaxaca":
-            modo('sun');
             break;
 
         case "Puebla":
-            modo('sun');
            break;
 
         case "Tabasco":
-            modo('sun');
            break;
 
         case "Tlaxcala":
-            modo('sun');
            break;
 
         case "Distrito Federal":
             lat = 19.32;
             lon = -99.43;
-            modo('sun');
            break;
 
         case "Guanajuato":
-            modo('sun');
            break;
 
         case "Guerrero":
-            modo('sun');
            break;
 
         case "Hidalgo":
-            modo('sun');
            break;
 
         case "Estado de México":
             lat = 19.29;
             lon = -99.70;
-            modo('sun');
            break;
 
         case "Morelos":
             lat = 18.93;
             lon = -99.31;
-            modo('sun');
            break;
 
         case "Querétaro":
-            modo('sun');
            break;
 
         case "Veracruz":
-            modo('sun');
            break;
 
         case "Chiapas":
-            modo('sun');
            break;
 
         case "Quintana Roo":
-            modo('sun');
            break;
 
         case "Yucatán":
             lat = 20.98;
             lon = 89.77;
-            modo('sun');
+            test = false;
            break;
 
         case "Test":
             lat = 20.98;
             lon = 89.77;
+            test = true;
             break;
         default:
             break;
@@ -349,5 +339,10 @@ estadou = estado;
         pressure = data.main.pressure;
     })
 console.log(datos);
-
+if (test == true){
+    document.getElementById("modal").style.display = "none";
+}
+else {
+ modo('sun');
+}
 }
