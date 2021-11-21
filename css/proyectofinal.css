@@ -305,3 +305,11 @@ body{
 #forecast{
     text-transform: capitalize;
 }
+
+.insta{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 8px;
+    z-index: 1;
+}
