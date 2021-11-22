@@ -243,31 +243,43 @@ estadou = estado;
             break;
  
         case "Jalisco":
-            lat = 0;
-            lon = 0;
+            lat = 20.67;
+            lon = -103.40;
             break;
  
         case "Michoacán":
-            lat = 0;
-            lon =0 ;
+            lat = 19.70;
+            lon = -101.27;
             break;
  
         case "Nayarit":
+            lan = 21.50;
+            lon = -104.91;
             break;
  
         case "Campeche":
+            lan = 19.83;
+            lon = -90.56;
             break;
  
         case "Oaxaca":
+            lat = 17.08;
+            lon = -96.80;
             break;
 
         case "Puebla":
+            lat = 19.04;
+            lon = -98.26;
            break;
 
         case "Tabasco":
+            lat = 17.99;
+            lon = -93.02;
            break;
 
         case "Tlaxcala":
+            lat = 19.31;
+            lon = -98.25;
            break;
 
         case "Distrito Federal":
@@ -276,9 +288,13 @@ estadou = estado;
            break;
 
         case "Guanajuato":
-           break;
-
+            lat = 21.12;
+            lon = -101.73;
+            break;
+            
         case "Guerrero":
+            lat = 17.54;
+            lon = -99.53;    
            break;
 
         case "Hidalgo":
@@ -298,12 +314,18 @@ estadou = estado;
            break;
 
         case "Veracruz":
+            lat = 19.54;
+            lon = -96.95;
            break;
 
         case "Chiapas":
+            lat = 16.74;
+            lon = -93.19;
            break;
 
         case "Quintana Roo":
+            lat = 21.12;
+            lot = -86.91;
            break;
 
         case "Yucatán":
