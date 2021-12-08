@@ -199,6 +199,39 @@ body{
     transition: 0.2s ease-in-out;
 }
 
+#extra{
+    cursor: not-allowed;
+}
+
+@media print{
+    body{
+        background-color: white;
+    }
+    .navbar{
+        display: none;
+    }
+
+    #vertical{
+        display: none;
+    }
+
+    #insta{
+        display: none;
+    }
+
+    .modal{
+        display: block;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    #mapa{
+        display: none;
+    }
+}
+
 .selectorbuttonfocus{
     --selectorsvg:var(--navbar);
     background-color: var(--selectoractive);
