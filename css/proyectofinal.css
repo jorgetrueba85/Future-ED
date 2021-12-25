@@ -12,6 +12,11 @@
     --border:rgba(0,0,0,0);
     --selectorsvg:var(--icons);
     --selectoractive:black;
+    --logoopa:1;
+    --divideropa:1;
+    --selectoropa:1;
+    --portopa:1;
+    --themeopa:1;
 }
 
 body{
@@ -19,6 +24,7 @@ body{
     margin: 0px;
     display: flex;
     align-items: center;
+    animation: opa 1s ease-in-out;
 }
 
 .navbar{
@@ -53,6 +59,7 @@ body{
     fill:var(--icons);
     width: 70%;
     transition: 0.2s ease-in-out;
+    opacity: var(--logobutton);
 }
 
 .logo-button svg:hover{
@@ -72,8 +79,11 @@ body{
     height: 2px;
     width: 38px;
     margin-top: 5px;
+    margin-bottom: 2px;
     border-radius: 1px;
     background-color: var(--icons);
+    opacity: var(--divideropa);
+    transition: 0.2s ease-in-out;
 }
 
 .button{
@@ -104,6 +114,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: 0.2s ease-in-out;
+    opacity: var(--themeopa);
 }
 
 .button-bottom svg{
@@ -122,6 +133,11 @@ body{
     fill:var(--icons);
     width: 70%;
     transition: 0.2s ease-in-out;   
+}
+
+#port{
+    opacity: var(--portopa);
+    transition: 0.2s ease-in-out;
 }
 
 .button{
@@ -165,7 +181,7 @@ body{
     width: 47px;
     height: 142px;
     padding-top: 5px;
-    padding-bottom: 9px;
+    padding-bottom: 13px;
 }
 
 .selectordiv2{
@@ -178,6 +194,8 @@ body{
     border: 2px solid var(--icons);
     padding:1px;
     border-radius: 10px;
+    opacity: var(--selectoropa);
+    transition: 0.2s ease-in-out;
 }
 
 .selectordiv3{
@@ -251,9 +269,12 @@ body{
 
 .estado{
     fill:var(--map);
-    stroke: width 2px;
+    stroke-width: 1px;
     stroke: var(--mapstroke);
     transition: all 0.2s ease-in-out;
+    stroke-dasharray: 900px;
+    stroke-dashoffset: 0px;
+    animation: mapa 2.5s ease-in-out;
 }
 
 .estado:hover{
@@ -346,6 +367,124 @@ body{
     position: fixed;
     right: 0;
     top: 0;
-    margin: 8px;
+    margin: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    height: 29px;
+    width: 28.4px;
     z-index: 1;
+}
+
+.insta svg{
+    fill:var(--bg);
+    margin-top: -2.6px;
+    margin-left: -0.2px;
+}
+
+#efimero{
+    display: none;
+}
+/*
+#efimero{
+    height: 100vh;
+    width: calc(100vw - 5rem);
+    position: fixed;
+    z-index: 1;
+}
+#navidad{
+   margin-left: 96px;
+}
+
+#navidad svg{
+    height: 6rem;
+}
+
+.sleigh1{
+    fill:rgb(78, 53, 24);
+}
+.sleigh2{
+    fill: red;
+    stroke: white;
+    stroke-width: 20px;
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 1000px;
+    animation: sleigh 2s ease-in-out;
+}
+
+@keyframes sleigh {
+    0%{
+        stroke-dashoffset: 2000px;
+    }
+    100%{
+        stroke-dashoffset: 1000px;
+    }
+}
+
+*/
+
+@keyframes mapa {
+    0%{
+        stroke-dashoffset: 900px;
+        stroke: var(--map);
+    }
+
+    10%{
+        stroke: var(--mapstroke);
+    }
+    100%{
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes opa {
+    0%{
+        --logoopa:0.00;
+        --divideropa:0.00;
+        --selectoropa:0.00;
+        --portopa:0.00;
+        --themeopa:0.00; 
+    }
+    20%{
+        --logoopa:1.00;
+        --divideropa:0.00;
+        --selectoropa:0.00;
+        --portopa:0.00;
+        --themeopa:0.00;
+    }
+    40%{
+        --logoopa:1.00;
+        --divideropa:1.00;
+        --selectoropa:0.00;
+        --portopa:0.00;
+        --themeopa:0.00;
+    }
+    60%{
+        --logoopa:1.00;
+        --divideropa:1.00;
+        --selectoropa:1.00;
+        --portopa:0.00;
+        --themeopa:0.00;
+    }
+    80%{
+        --logoopa:1.00;
+        --divideropa:1.00;
+        --selectoropa:1.00;
+        --portopa:1.00;
+        --themeopa:0.00;
+    }
+    100%{
+        --logoopa:1.00;
+        --divideropa:1.00;
+        --selectoropa:1.00;
+        --portopa:1.00;
+        --themeopa:1.00;
+    }
+
+
+}
+
+@keyframes irot {
+    0%{
+        rotate: 0;
+    }
 }
